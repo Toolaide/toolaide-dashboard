@@ -1,0 +1,22 @@
+<div class="fixed-toolbar mat-elevation-z5">
+  <mat-toolbar>
+    <div class="corner-box" routerLink="/">
+      Toolaide
+    </div>
+  </mat-toolbar>
+</div>
+<nav class="tam-toolbar">
+  <div class="tam-toolbar-content">
+    <mat-nav-list>
+      <h3 mat-subheader>Tools</h3>
+      <mat-divider></mat-divider>
+      <mat-list-item (click)="openTool(tool)" *ngFor="let tool of tools">
+        <h4 mat-line>{{tool.definition.name}}</h4>
+        <p mat-line>{{tool.definition.description}}</p>
+      </mat-list-item>
+    </mat-nav-list>
+  </div>
+</nav>
+<div class="tam-content">
+  <router-outlet></router-outlet>
+</div>

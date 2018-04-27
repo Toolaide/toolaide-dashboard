@@ -1,0 +1,48 @@
+@import '../themes/dark-theme';
+$sidebarWidth: 250px;
+$headerHeight: 64px;
+
+.fixed-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  mat-toolbar {
+    background-color: $tam-app-dark;
+    padding-left: 0px;
+
+    .corner-box {
+      width: $sidebarWidth;
+      height: $headerHeight;
+      font-family: monospace;
+      line-height: 64px;
+      text-align: center;
+      font-size: 2em;
+      border-right: mat-color($tam-app-primary) solid 1px;
+      user-select: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.tam-toolbar {
+  display: block;
+  width: $sidebarWidth;
+  bottom: 0;
+  top: $headerHeight;
+  position: fixed;
+  border-right: mat-color($tam-app-primary) solid 1px;
+  background-color: $tam-app-gray;
+
+  h3 {
+    padding: 0 16px;
+  }
+}
+.tam-content {
+  margin-left: $sidebarWidth;
+  padding-top: $headerHeight;
+}
+

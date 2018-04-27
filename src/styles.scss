@@ -1,0 +1,20 @@
+// Material Theme
+@import '~@angular/material/theming';
+@import 'app/themes/dark-theme';
+@include mat-core();
+
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($tam-app-theme);
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: $tam-app-body;
+  color: $tam-app-text-color;
+}

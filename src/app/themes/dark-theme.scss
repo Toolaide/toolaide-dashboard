@@ -1,0 +1,16 @@
+@import '~@angular/material/theming';
+
+
+$tam-app-primary: mat-palette($mat-green, A400);
+$tam-app-accent:  mat-palette($mat-light-green, A200, A100, A400);
+
+$tam-app-warn:    mat-palette($mat-deep-orange, A400);
+
+$tam-app-body: #282828;
+$tam-app-dark: #212121;
+$tam-app-gray: #3c3f41;
+$tam-app-black: #101010;
+$tam-app-text-color: white;
+
+// Create the theme object (a Sass map containing all of the palettes).
+$tam-app-theme: mat-dark-theme($tam-app-primary, $tam-app-accent, $tam-app-warn);
