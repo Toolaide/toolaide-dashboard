@@ -27,7 +27,6 @@ export class NavigationService {
   }
 
   registerTools(toolRoutes: Routes) {
-    console.log("Foo");
     const tools = this.$tools.getValue();
     toolRoutes.forEach(toolRoute => {
       if (!toolRoute.data && !toolRoute.data.tool) {
